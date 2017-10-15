@@ -13,6 +13,9 @@
 		142399E21F860DBC00906E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142399E01F860DBC00906E30 /* Main.storyboard */; };
 		142399E41F860DBC00906E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142399E31F860DBC00906E30 /* Assets.xcassets */; };
 		142399E71F860DBC00906E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142399E51F860DBC00906E30 /* LaunchScreen.storyboard */; };
+		144325B21F91E27D0012D7B2 /* DFBrowseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144325B11F91E27D0012D7B2 /* DFBrowseImageView.m */; };
+		144325B51F9207A30012D7B2 /* DFBrowseImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 144325B41F9207A30012D7B2 /* DFBrowseImageManager.m */; };
+		892808C5A468482D7CFD734A /* Pods_ViewImageInWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782C00EAB46011B90EEC02D9 /* Pods_ViewImageInWebView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		142399E31F860DBC00906E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142399E61F860DBC00906E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142399E81F860DBC00906E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		144325B01F91E27D0012D7B2 /* DFBrowseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBrowseImageView.h; sourceTree = "<group>"; };
+		144325B11F91E27D0012D7B2 /* DFBrowseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBrowseImageView.m; sourceTree = "<group>"; };
+		144325B31F9207A30012D7B2 /* DFBrowseImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBrowseImageManager.h; sourceTree = "<group>"; };
+		144325B41F9207A30012D7B2 /* DFBrowseImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBrowseImageManager.m; sourceTree = "<group>"; };
+		782C00EAB46011B90EEC02D9 /* Pods_ViewImageInWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewImageInWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		975753CF5431D8F04E75CB93 /* Pods-ViewImageInWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewImageInWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewImageInWebView/Pods-ViewImageInWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		ECCA7F66B9BCC485F751979B /* Pods-ViewImageInWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewImageInWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewImageInWebView/Pods-ViewImageInWebView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892808C5A468482D7CFD734A /* Pods_ViewImageInWebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				142399D61F860DBC00906E30 /* ViewImageInWebView */,
 				142399D51F860DBC00906E30 /* Products */,
+				B65562422D4642FC1CBD2288 /* Pods */,
+				5784B618D8C52C8552ACDEA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +71,9 @@
 		142399D61F860DBC00906E30 /* ViewImageInWebView */ = {
 			isa = PBXGroup;
 			children = (
-				142399DA1F860DBC00906E30 /* AppDelegate.h */,
-				142399DB1F860DBC00906E30 /* AppDelegate.m */,
-				142399DD1F860DBC00906E30 /* ViewController.h */,
+				144325AF1F91E24A0012D7B2 /* DFBrowseImageView */,
 				142399DE1F860DBC00906E30 /* ViewController.m */,
-				142399E01F860DBC00906E30 /* Main.storyboard */,
-				142399E31F860DBC00906E30 /* Assets.xcassets */,
-				142399E51F860DBC00906E30 /* LaunchScreen.storyboard */,
-				142399E81F860DBC00906E30 /* Info.plist */,
+				142399DD1F860DBC00906E30 /* ViewController.h */,
 				142399D71F860DBC00906E30 /* Supporting Files */,
 			);
 			path = ViewImageInWebView;
@@ -74,9 +82,43 @@
 		142399D71F860DBC00906E30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				142399DA1F860DBC00906E30 /* AppDelegate.h */,
+				142399DB1F860DBC00906E30 /* AppDelegate.m */,
+				142399E81F860DBC00906E30 /* Info.plist */,
+				142399E31F860DBC00906E30 /* Assets.xcassets */,
+				142399E51F860DBC00906E30 /* LaunchScreen.storyboard */,
+				142399E01F860DBC00906E30 /* Main.storyboard */,
 				142399D81F860DBC00906E30 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		144325AF1F91E24A0012D7B2 /* DFBrowseImageView */ = {
+			isa = PBXGroup;
+			children = (
+				144325B01F91E27D0012D7B2 /* DFBrowseImageView.h */,
+				144325B11F91E27D0012D7B2 /* DFBrowseImageView.m */,
+				144325B31F9207A30012D7B2 /* DFBrowseImageManager.h */,
+				144325B41F9207A30012D7B2 /* DFBrowseImageManager.m */,
+			);
+			path = DFBrowseImageView;
+			sourceTree = "<group>";
+		};
+		5784B618D8C52C8552ACDEA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782C00EAB46011B90EEC02D9 /* Pods_ViewImageInWebView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B65562422D4642FC1CBD2288 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				975753CF5431D8F04E75CB93 /* Pods-ViewImageInWebView.debug.xcconfig */,
+				ECCA7F66B9BCC485F751979B /* Pods-ViewImageInWebView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 142399EB1F860DBC00906E30 /* Build configuration list for PBXNativeTarget "ViewImageInWebView" */;
 			buildPhases = (
+				D373BA4C1EE736EB5598E463 /* [CP] Check Pods Manifest.lock */,
 				142399D01F860DBC00906E30 /* Sources */,
 				142399D11F860DBC00906E30 /* Frameworks */,
 				142399D21F860DBC00906E30 /* Resources */,
+				D50B2FFF0B941FC18CCBAE7F /* [CP] Embed Pods Frameworks */,
+				64450D73884D66760CD0C4EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +191,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64450D73884D66760CD0C4EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViewImageInWebView/Pods-ViewImageInWebView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D373BA4C1EE736EB5598E463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D50B2FFF0B941FC18CCBAE7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViewImageInWebView/Pods-ViewImageInWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		142399D01F860DBC00906E30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144325B21F91E27D0012D7B2 /* DFBrowseImageView.m in Sources */,
 				142399DF1F860DBC00906E30 /* ViewController.m in Sources */,
 				142399DC1F860DBC00906E30 /* AppDelegate.m in Sources */,
+				144325B51F9207A30012D7B2 /* DFBrowseImageManager.m in Sources */,
 				142399D91F860DBC00906E30 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,11 +368,19 @@
 		};
 		142399EC1F860DBC00906E30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975753CF5431D8F04E75CB93 /* Pods-ViewImageInWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 769S6729K7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				INFOPLIST_FILE = ViewImageInWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.ViewImageInWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -285,11 +388,19 @@
 		};
 		142399ED1F860DBC00906E30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECCA7F66B9BCC485F751979B /* Pods-ViewImageInWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 769S6729K7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				INFOPLIST_FILE = ViewImageInWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.ViewImageInWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -314,6 +425,7 @@
 				142399ED1F860DBC00906E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

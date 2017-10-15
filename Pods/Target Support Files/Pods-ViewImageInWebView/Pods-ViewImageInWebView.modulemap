@@ -1,0 +1,6 @@
+framework module Pods_ViewImageInWebView {
+  umbrella header "Pods-ViewImageInWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}
