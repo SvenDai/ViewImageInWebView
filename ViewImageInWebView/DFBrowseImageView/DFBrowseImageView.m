@@ -7,6 +7,7 @@
 //
 
 #import "DFBrowseImageView.h"
+#import "Masonry.h"
 
 @implementation DFBrowseImageView
 

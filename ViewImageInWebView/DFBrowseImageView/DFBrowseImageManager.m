@@ -9,6 +9,7 @@
 #import "DFBrowseImageManager.h"
 #import "DFBrowseImageView.h"
 #import "UIImageView+WebCache.h"
+#import "Masonry.h"
 
 @interface DFBrowseImageManager ()<DFBrowseImageViewDelegate>
 

@@ -15,6 +15,7 @@
 		142399E71F860DBC00906E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142399E51F860DBC00906E30 /* LaunchScreen.storyboard */; };
 		144325B21F91E27D0012D7B2 /* DFBrowseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144325B11F91E27D0012D7B2 /* DFBrowseImageView.m */; };
 		144325B51F9207A30012D7B2 /* DFBrowseImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 144325B41F9207A30012D7B2 /* DFBrowseImageManager.m */; };
+		6163FC311FA9B9D5008BCCD0 /* ViewImageInWebView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6163FC301FA9B9D5008BCCD0 /* ViewImageInWebView.podspec */; };
 		892808C5A468482D7CFD734A /* Pods_ViewImageInWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782C00EAB46011B90EEC02D9 /* Pods_ViewImageInWebView.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		144325B11F91E27D0012D7B2 /* DFBrowseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBrowseImageView.m; sourceTree = "<group>"; };
 		144325B31F9207A30012D7B2 /* DFBrowseImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBrowseImageManager.h; sourceTree = "<group>"; };
 		144325B41F9207A30012D7B2 /* DFBrowseImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBrowseImageManager.m; sourceTree = "<group>"; };
+		6163FC301FA9B9D5008BCCD0 /* ViewImageInWebView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewImageInWebView.podspec; sourceTree = "<group>"; };
 		782C00EAB46011B90EEC02D9 /* Pods_ViewImageInWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewImageInWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		975753CF5431D8F04E75CB93 /* Pods-ViewImageInWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewImageInWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewImageInWebView/Pods-ViewImageInWebView.debug.xcconfig"; sourceTree = "<group>"; };
 		ECCA7F66B9BCC485F751979B /* Pods-ViewImageInWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewImageInWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewImageInWebView/Pods-ViewImageInWebView.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		142399CB1F860DBC00906E30 = {
 			isa = PBXGroup;
 			children = (
+				6163FC301FA9B9D5008BCCD0 /* ViewImageInWebView.podspec */,
 				142399D61F860DBC00906E30 /* ViewImageInWebView */,
 				142399D51F860DBC00906E30 /* Products */,
 				B65562422D4642FC1CBD2288 /* Pods */,
@@ -155,7 +158,7 @@
 				TargetAttributes = {
 					142399D31F860DBC00906E30 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 769S6729K7;
+						DevelopmentTeam = 485NBRU9KM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6163FC311FA9B9D5008BCCD0 /* ViewImageInWebView.podspec in Resources */,
 				142399E71F860DBC00906E30 /* LaunchScreen.storyboard in Resources */,
 				142399E41F860DBC00906E30 /* Assets.xcassets in Resources */,
 				142399E21F860DBC00906E30 /* Main.storyboard in Resources */,
@@ -371,7 +375,7 @@
 			baseConfigurationReference = 975753CF5431D8F04E75CB93 /* Pods-ViewImageInWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 769S6729K7;
+				DEVELOPMENT_TEAM = 485NBRU9KM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
@@ -383,6 +387,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.ViewImageInWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -391,7 +396,7 @@
 			baseConfigurationReference = ECCA7F66B9BCC485F751979B /* Pods-ViewImageInWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 769S6729K7;
+				DEVELOPMENT_TEAM = 485NBRU9KM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
@@ -403,6 +408,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.ViewImageInWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
